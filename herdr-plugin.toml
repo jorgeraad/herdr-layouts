@@ -1,0 +1,54 @@
+id = "jorgeraad.layouts"
+name = "Layouts"
+version = "0.1.0"
+min_herdr_version = "0.9.1"
+description = "tmux layouts for Herdr: next-layout, select-layout and spread evenly"
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "next-layout"
+title = "Next layout"
+contexts = ["pane"]
+command = ["node", "main.mjs", "next-layout"]
+
+[[actions]]
+id = "previous-layout"
+title = "Previous layout"
+contexts = ["pane"]
+command = ["node", "main.mjs", "previous-layout"]
+
+[[actions]]
+id = "even-horizontal"
+title = "Even horizontal"
+contexts = ["pane"]
+command = ["node", "main.mjs", "select-layout", "even-horizontal"]
+
+[[actions]]
+id = "even-vertical"
+title = "Even vertical"
+contexts = ["pane"]
+command = ["node", "main.mjs", "select-layout", "even-vertical"]
+
+[[actions]]
+id = "main-horizontal"
+title = "Main horizontal"
+contexts = ["pane"]
+command = ["node", "main.mjs", "select-layout", "main-horizontal"]
+
+[[actions]]
+id = "main-vertical"
+title = "Main vertical"
+contexts = ["pane"]
+command = ["node", "main.mjs", "select-layout", "main-vertical"]
+
+[[actions]]
+id = "tiled"
+title = "Tiled"
+contexts = ["pane"]
+command = ["node", "main.mjs", "select-layout", "tiled"]
+
+[[actions]]
+id = "balance"
+title = "Spread panes evenly"
+contexts = ["pane"]
+command = ["node", "main.mjs", "balance"]

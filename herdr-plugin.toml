@@ -9,46 +9,46 @@ platforms = ["linux", "macos"]
 id = "next-layout"
 title = "Next layout"
 contexts = ["pane"]
-command = ["node", "main.mjs", "next-layout"]
+command = ["sh", "node.sh", "main.mjs", "next-layout"]
 
 [[actions]]
 id = "previous-layout"
 title = "Previous layout"
 contexts = ["pane"]
-command = ["node", "main.mjs", "previous-layout"]
+command = ["sh", "node.sh", "main.mjs", "previous-layout"]
 
 [[actions]]
 id = "even-horizontal"
 title = "Even horizontal"
 contexts = ["pane"]
-command = ["node", "main.mjs", "select-layout", "even-horizontal"]
+command = ["sh", "node.sh", "main.mjs", "select-layout", "even-horizontal"]
 
 [[actions]]
 id = "even-vertical"
 title = "Even vertical"
 contexts = ["pane"]
-command = ["node", "main.mjs", "select-layout", "even-vertical"]
+command = ["sh", "node.sh", "main.mjs", "select-layout", "even-vertical"]
 
 [[actions]]
 id = "main-horizontal"
 title = "Main horizontal"
 contexts = ["pane"]
-command = ["node", "main.mjs", "select-layout", "main-horizontal"]
+command = ["sh", "node.sh", "main.mjs", "select-layout", "main-horizontal"]
 
 [[actions]]
 id = "main-vertical"
 title = "Main vertical"
 contexts = ["pane"]
-command = ["node", "main.mjs", "select-layout", "main-vertical"]
+command = ["sh", "node.sh", "main.mjs", "select-layout", "main-vertical"]
 
 [[actions]]
 id = "tiled"
 title = "Tiled"
 contexts = ["pane"]
-command = ["node", "main.mjs", "select-layout", "tiled"]
+command = ["sh", "node.sh", "main.mjs", "select-layout", "tiled"]
 
 [[actions]]
 id = "balance"
 title = "Spread panes evenly"
 contexts = ["pane"]
-command = ["node", "main.mjs", "balance"]
+command = ["sh", "node.sh", "main.mjs", "balance"]
